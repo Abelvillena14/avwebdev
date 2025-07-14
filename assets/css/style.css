@@ -516,6 +516,21 @@ main {
  * #service 
  */
 
+/* Section base */
+.service {
+  background-color: #121212; /* dark background */
+  padding: 60px 20px;
+  color: #e0e0e0;
+}
+
+.service-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: #fff;
+}
+
+/* List and items */
 .service-list {
   list-style: none;
   padding: 0;
@@ -526,13 +541,12 @@ main {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  background: #1e1e2f;
   margin-bottom: 40px;
-  background: #000000;
   padding: 20px;
   border-radius: 10px;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  color: #333;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .service-icon-box {
@@ -543,46 +557,45 @@ main {
 
 .service-icon-box i {
   font-size: 40px;
-  color: #007bff;
+  color: #a78bfa;
   transition: color 0.3s ease;
 }
 
 .service-content-box {
   width: 100%;
   text-align: center;
-  transition: color 0.3s ease;
 }
 
 .service-item-title {
   font-size: 1.25rem;
   font-weight: bold;
   margin-bottom: 10px;
+  color: #ffffff;
 }
 
 .service-item-text {
   font-size: 1rem;
-  color: #555;
+  color: #cccccc;
   line-height: 1.5;
   transition: color 0.3s ease;
 }
 
-/* Hover Effects */
+/* Hover effects */
 .service-item:hover {
-  background-color: #007bff;
-  color: #fff;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  background-color: #6b21a8; /* purple */
+  color: #ffffff;
 }
 
 .service-item:hover .service-item-title,
 .service-item:hover .service-item-text {
-  color: #fff;
+  color: #ffffff;
 }
 
 .service-item:hover .service-icon-box i {
-  color: #fff;
+  color: #ffffff;
 }
 
-/* Desktop layout */
+/* Desktop responsiveness */
 @media (min-width: 768px) {
   .service-item {
     flex-wrap: nowrap;
@@ -601,7 +614,6 @@ main {
     text-align: left;
   }
 }
-
 
 
 
